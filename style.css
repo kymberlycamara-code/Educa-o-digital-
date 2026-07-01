@@ -1,0 +1,14 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:12px;
+    color: rgb(76, 76, 184);
+    margin-top: auto;
+
+}
+body{
+    background-color:azure
+}
+header{
+    background-color: rgb(78, 78, 162);
+    color:azure;
+}
