@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog Tech | Kymberly Paola</title>
-    <link rel="stylesheet" href="estilo_pagina_2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -28,8 +28,11 @@
         </article>
 
         <article class="card article-card">
+            <!-- Ajuste 1: Agora a foto do Opala também funciona como um link clicável -->
             <div class="article-image">
-                <img src="download.jpeg" alt="Chevrolet Opala SS Vermelho">
+                <a href="mustang-trabalho.html">
+                    <img src="download.jpeg" alt="Chevrolet Opala SS Vermelho" style="cursor: pointer;">
+                </a>
             </div>
             
             <div class="article-body">
@@ -47,6 +50,11 @@
                     <li><strong>Família Caravan:</strong> A versão perua que dominou as estradas brasileiras, oferecendo amplo espaço e versatilidade.</li>
                     <li><strong>Motor 4.1 Litros:</strong> O lendário motor de seis cilindros em linha, famoso por seu torque bruto e ronco inconfundível.</li>
                 </ul>
+
+                <!-- Ajuste 2: Adicionado o botão oficial de navegação para a próxima página -->
+                <div class="nav-container" style="margin: 25px 0;">
+                    <a href="pagina2.html" class="btn-primary" style="display: inline-block; background-color: #2a5298; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 5px; font-weight: bold;">Próximo Post: Ford Mustang &rarr;</a>
+                </div>
 
                 <div class="interactive-box">
                     <h4>Para onde quer direcionar nossa conversa?</h4>
