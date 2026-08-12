@@ -1,0 +1,200 @@
+/* Reset de Margens e Configurações Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Estilo clássico acadêmico */
+    line-height: 1.8;
+    background-color: #f7f9fa;
+    color: #222;
+}
+
+/* Cabeçalho do Trabalho */
+.academic-header {
+    background-color: #fff;
+    border-bottom: 3px double #1e3c72;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.academic-header .institution {
+    display: block;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #2a5298;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.academic-header h1 {
+    font-size: 2.2rem;
+    color: #1a252f;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.academic-header p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Container do Corpo do Texto */
+.paper-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 50px 60px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+/* Seções Acadêmicas */
+.paper-section {
+    margin-bottom: 40px;
+}
+
+.paper-section h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.4rem;
+    color: #1e3c72;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.paper-section p {
+    text-indent: 30px; /* Recuo clássico de parágrafo de artigo */
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1.15rem;
+}
+
+/* Listas de Conteúdo */
+.academic-list {
+    margin: 20px 0 30px 40px;
+}
+
+.academic-list li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* Tabelas Acadêmicas */
+.table-container {
+    margin: 35px 0;
+}
+
+.table-container h3 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1e3c72;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tr {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Citações e Notas Laterais */
+.quote-box {
+    background-color: #f1f5f9;
+    border-left: 4px solid #2a5298;
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+.quote-box p {
+    text-indent: 0;
+    margin-bottom: 0;
+    color: #334155;
+}
+
+/* Botão de Retorno */
+.academic-navigation {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-academic {
+    display: inline-block;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #2a5298;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.btn-academic:hover {
+    background-color: #2a5298;
+    color: #fff;
+}
+
+/* Rodapé Acadêmico */
+.academic-footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1a252f;
+    color: #ccc;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    margin-top: 60px;
+}
+
+/* Ajustes de Responsividade para Celulares */
+@media (max-width: 768px) {
+    .paper-container {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    
+    .academic-header h1 {
+        font-size: 1.7rem;
+    }
+    
+    table {
+        font-size: 0.8rem;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+    }
+}
