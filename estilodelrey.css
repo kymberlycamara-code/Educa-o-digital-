@@ -1,0 +1,102 @@
+/* ===================================================
+   ESTILO HOMENAGEM: FORD DEL REY (ÍCONE ANOS 80/90)
+   =================================================== */
+
+:root {
+  /* Cores clássicas do modelo Ouro */
+  --delrei-dourado: #c5a059;
+  --delrei-prata: #d1d5db;
+  --delrei-vinho: #581c87;
+  --painel-fundo: #111827;
+  --texto-retro: #f3f4f6;
+  --detalhe-cromado: linear-gradient(145deg, #e5e7eb, #9ca3af);
+}
+
+/* Corpo da página */
+body {
+  background-color: var(--painel-fundo);
+  color: var(--texto-retro);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Card Principal - Estilo Painel do Del Rey */
+.del-rei-card {
+  background: #1f2937;
+  border: 4px solid var(--delrei-dourado);
+  border-radius: 8px;
+  width: 320px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  position: relative;
+}
+
+/* Friso Cromado (Detalhe Clássico) */
+.del-rei-card::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: var(--detalhe-cromado);
+}
+
+/* Título estilo Emblemático */
+.del-rei-card h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.2rem;
+  letter-spacing: 4px;
+  color: var(--delrei-dourado);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+/* Subtítulo Versão Ouro */
+.del-rei-card .versao {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Relógio Digital Clássico do Painel */
+.relogio-digital {
+  background-color: #000000;
+  color: #ef4444; /* LED Vermelho/Laranja vintage */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #374151;
+  box-shadow: inset 0 0 8px rgba(239, 68, 68, 0.4);
+  margin-bottom: 20px;
+}
+
+/* Botão Estilo Chave / Partida */
+.btn-liga {
+  background: var(--detalhe-cromado);
+  color: #111827;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-liga:hover {
+  background: var(--delrei-dourado);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(197, 160, 89, 0.6);
+}
